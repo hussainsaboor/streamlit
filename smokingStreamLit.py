@@ -13,7 +13,7 @@ parameter_list=['age', 'height(cm)', 'weight(kg)', 'waist(cm)', 'eyesight(left)'
 
 with st.spinner('Fetching Latest ML Model'):
     # Use pickle to load in the pre-trained model
-    model = joblib.load("TrainModel\smokingModel.pkl")
+    model = joblib.load("smokingModel.pkl")
     st.success('Model has been loaded!')
 
 age_number = st.number_input("Age",min_value=20, max_value=80, value=42,key=1)
